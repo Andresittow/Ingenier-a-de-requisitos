@@ -6,8 +6,8 @@ class Conagua:
     def getPrecio(self):
         return self.__precio
     
-    def setPrecio(self, precio):
-        self.__precio = precio
+    def setPrecioMetroCubico(self, precio):
+        self.__precioMetroCubico = precioMetroCubico
     
     def pagoConsumoDeAgua(self, alto, largo, ancho):
         volumen = alto * largo * ancho
