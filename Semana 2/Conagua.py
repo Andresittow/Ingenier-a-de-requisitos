@@ -1,7 +1,7 @@
 class Conagua:
     
-    def __init__(self, precio):
-        self.__precio = precio
+    def __init__(self, precioMetroCubico):
+        self.__precioMetroCubico = precioMetroCubico
         
     def getPrecio(self):
         return self.__precio
@@ -11,6 +11,6 @@ class Conagua:
     
     def pagoConsumoDeAgua(self, alto, largo, ancho):
         volumen = alto * largo * ancho
-        pago = volumen * self.__precio
+        pago = volumen * self.__precioMetroCubico
         return pago
         
